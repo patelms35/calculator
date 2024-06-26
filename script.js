@@ -28,3 +28,28 @@ themeToggleBtn.onclick = () => {
   themeToggleBtn.classList.toggle("active");
   isDark = !isDark;
 };
+// // right click lock 
+document.oncontextmenu = () => {
+    return false
+}
+
+// View page source by ctrl + U key and copy ctrl + c 
+
+document.onkeydown = e => {
+    if(e.key == "F12") {
+        alert("By Mark Patel Copyright © 2021-2024 .")
+        return false
+    }
+    if (e.key == "Enter") {
+        return false;
+      }
+    if(e.ctrlKey && e.key == "u") {
+        alert("By Mark Patel Copyright © 2021-2024 .")
+        return false
+    }
+    if(e.ctrlKey && e.shiftKey && e.key == "I") {
+        alert("By Mark Patel Copyright © 2021-2024 .")
+        return false
+    }
+    
+}
